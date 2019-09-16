@@ -47,16 +47,13 @@ public class AbstractFactorySimulator {
 
         //clear quack counter
         QuackCounter.clear();
-        
+
         System.out.println("\nDuck Simulator: With Counter and Echo Decorator");
         simulate(mallardDuckWithCounterAndEcho); //quack x2
         simulate(redheadDuckWithCounterAndEcho); //quack x2
         simulate(duckCallWithCounterAndEcho); //kwak x2
         simulate(rubberDuckWithCounterAndEcho); //squeak x2
         System.out.println("The ducks quacked " + QuackCounter.getQuacks() + " times");
-
-
-
 
     }
     void simulate(Quackable duck) {
